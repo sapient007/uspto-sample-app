@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorator="layout">
+  <body>
+    <div layout:fragment="content">
+      <h1>Sample Patent Search Application</h1>
+      <p>This sample demonstrates how to use Spring MVC and Spring Web Flow together with Thymeleaf and Tiles.</p>
+	  <hr />
+		
+	  <p>The key features illustrated in this sample include:</p>
+	  <ul>
+			<li>Sample of an Spring-based Application in CloudFoundry</li>
+		    <li>Self-Healing of Applications (1 of the 4 HA features of CF)</li>
+		    <li>Zero Downtime (Blue-Green) Deployment.</li>
+	  </ul>
+	  <p>
+        <a class="button" th:href="@{/patents}">Search Patents</a>
+         <a href="kill" class="button">Kill Application</a>
+      </p>
+    </div>
+  </body>
+</html>

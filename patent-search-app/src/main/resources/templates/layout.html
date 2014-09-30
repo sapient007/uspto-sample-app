@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+  <head>
+    <title>USPTO Patent Search Demo</title>
+   <!--  <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" href="../../css/bootstrap.min.css"/> -->
+    <link rel="stylesheet" href="../../css/screen.css" th:href="@{/css/screen.css}" />
+    <link rel="stylesheet" href="../../css/patent.css" th:href="@{/css/patent.css}" />
+  </head>
+  <body class="tundra">
+    <div id="page" class="container">
+		<div id="header">
+			<div id="logo">
+					<a href="#" th:href="@{/}"> <img
+						src="../../images/uspto-logo.png"
+						th:src="@{/images/uspto-logo.png}"
+						alt="Sample USPTO application" />
+					</a>
+				
+					<img class="right" src="../../image/demo.png"
+							th:src="@{/images/demo.png}" height="60" width="60"
+							alt="A demo application" />
+				
+			</div>
+		</div>
+		<div id="menu" style="background-color:green">
+			<ul>
+				<li><a href="#">PATENTS</a></li>
+				<li class="nav_separator"></li>
+				
+				<li><a href="#">PRODUCTS &amp; SERVICES</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">INVENTORS</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">NEWS &amp; NOTICES</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">FAQs</a></li>
+				<li class="nav_separator"></li>
+				<li><a href="#">ABOUT US</a></li>
+			</ul>
+		</div>
+
+		
+		<div id="middle">
+			<div id="leftSec">
+				<ul class="dynamicText">
+					<li><a href="http://www.uspto.gov/blog"> <span
+							class="left"> <span class="h4">The Director's
+									Forum</span> <span class="p">A blog from USPTO's leadership</span>
+						</span> <img class="right" src="../../image/finalsealpn.png"
+							th:src="@{/images/finalsealpn.png}"
+							alt="USPTO Official Seal" />
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">America Invents Act</span> <span class="p">Your
+									guide to the law</span>
+						</span> <img class="right" src="../../image/lightbulbbtn.png"
+							th:src="@{/images/lightbulbbtn.png}"
+							alt="light bulb with the American flag superimposed over the bulb" />
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">Patent Examiner Guidance</span> <span class="p">Updated
+									Myriad/Mayo Guidance</span>
+						</span> <img class="right"
+							src="../../image/patentdrawingformemoranda.png"
+							th:src="@{/images/patentdrawingformemoranda.png}"
+							alt="Patent drawing" />
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">USPTO Track One</span> <span class="p">Prioritized
+									patent examination</span>
+						</span> <img class="right" src="../../image/trackone.png"
+							th:src="@{/images/trackone.png}"
+							alt="Red train speeding down the track" />
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">IP Awareness Assessment Tool</span> <span class="p">Education
+									for business and inventors</span>
+						</span> <img class="right" src="../../image/iptoolnew.png"
+							th:src="@{/images/iptoolnew.png}"
+							alt="IP Awareness Assessment - USPTO and NIST" />
+					</a></li>
+					<li><a
+						href="http://www.uspto.gov/about/stratplan/dashboards.jsp"> <span
+							class="left"> <span class="h4">Data Visualization
+									Center</span> <span class="p">Study the information dashboards</span>
+						</span> <img class="right" src="../../image/dashboard.png"
+							th:src="@{/images/dashboard.png}"
+							alt="user input of jpeg" />
+					</a></li>
+					<li><a href="#"> <span class="left"> <span
+								class="h4">Patent Trial and Appeal Board</span> <span class="p">Formerly,
+									the BPAI</span>
+						</span> <img class="right" src="../../image/ptaborange.png"
+							th:src="@{/images/ptaborange.png}" alt="PTAB" />
+					</a></li>
+					<li><a href="http://www.uspto.gov/blog/ebiz/"> <span
+							class="left"> <span class="h4">Systems Status</span> <span
+								class="p">Check here for online business system status</span>
+						</span> <img class="right" src="../../image/systemalert.png"
+							th:src="@{/images/systemalert.png}"
+							alt="Lights indicating systems status" />
+					</a></li>
+					<li><a href="http://careers.uspto.gov"> <span
+							class="left"> <span class="h4">Now Hiring</span> <span
+								class="p">USPTO vacancies and how to apply</span>
+						</span> <img class="right" src="../../image/careers.png"
+							th:src="@{/images/careers.png}"
+							alt="A face looking up into the future" />
+					</a></li>
+				</ul>
+			</div>
+			<div id="midSec">
+				<div id="main" layout:fragment="content">
+
+					BODY PAGE GOES HERE!
+
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="footer" class="clearfix">
+			<!-- Footer content in all the pages -->
+			<div class="colLogos">
+				<a href="/" title="United States Patent and Trademark Office"> <img
+					src="../../images/footer_uspto.png"
+					th:src="@{/images/footer_uspto.png}"
+					alt="United States Patent and Trademark Office" /></a><br />
+			</div>
+			<div class="col">
+				<ul class="footer">
+					<li><a href="#">Accessibility</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Emergencies/Security Alerts</a></li>
+					<li><a href="#">Information Quality Guidelines</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="footer">
+					<li><a href="#">Federal Activities Inventory Reform (FAIR)
+							Act</a></li>
+					<li><a href="#">Notification and Federal Employee
+							Antidiscrimination and Retaliation (NoFEAR) Act</a></li>
+					<li><a href="#">Budget &amp; Performance</a></li>
+					<li><a href="#">Freedom of Information Act (FOIA)</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="footer">
+					<li><a href="http://www.osec.doc.gov/ocr/nofear/nofear.htm">Department
+							of Commerce NoFEAR Act Report</a></li>
+					<li><a href="http://www.regulations.gov/">Regulations.gov</a></li>
+					<li><a href="http://www.stopfakes.gov/">STOP!Fakes.gov</a></li>
+					<li><a href="http://www.commerce.gov">Department of
+							Commerce</a></li>
+					<li><a href="http://www.usa.gov/">USA.gov</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<ul class="footer">
+					<li><a href="#">Strategy Targeting Organized Piracy
+							(STOP!)</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Site Index</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">USPTO Webmaster</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
