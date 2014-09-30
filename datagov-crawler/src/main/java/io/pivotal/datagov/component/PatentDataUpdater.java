@@ -29,7 +29,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 import org.w3c.dom.Document;
@@ -54,10 +53,6 @@ public class PatentDataUpdater {
 	private DateFormat formatter = new SimpleDateFormat("yyyyMMdd");
     public static int batchSize = 100;
     
-	/**
-	 * 
-	 */
-	@Scheduled(fixedRate = 3600000)
     public void processPatentFile() {
 		List<PatentDataFile> files = patentDataFileRepository.findByfileDownloaded(Boolean.FALSE);
 		
