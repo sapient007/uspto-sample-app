@@ -1,6 +1,8 @@
 ---
+buildpack: https://github.com/cloudfoundry/java-buildpack.git
 services:
-- patent-data
+- patent-data-service
+
 applications:
 - name: datagov-crawler
   memory: 2GB

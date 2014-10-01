@@ -4,5 +4,7 @@ applications:
   memory: 2GB
   path: target/crawler-0.0.1-SNAPSHOT.jar
   no-route: true
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
   services:
-  - patent-data
+  - patent-data-service
+
