@@ -5,7 +5,7 @@ This is a sample application using Spring Boot. It demonstrates the use of "Micr
 
 ## Deployment Steps:
 
-* Create a data service named `patent-data` in CloudFoundry.
+* Create a data service named `patent-data-service` in CloudFoundry.
 * Build both projects independently using `mvn clean package`. This should create both jar and war files needed. 
 * Run `cf push` from the root directory. The `manifest.yml` contains all info needed.
 
