@@ -1,6 +1,7 @@
 This is a sample app using SpringBoot and Thymeleaf. By default, the sample app uses a basic "in-memory"
 database (h2) for prototyping purposes.
 
+
 ## Pre-Requisites 
 Create a data service named `patent-data-service` (to use a relational database)
 
