@@ -2,7 +2,7 @@ This is a sample app using SpringBoot and Thymeleaf. By default, the sample app 
 database (h2) for prototyping purposes.
 
 ## Pre-Requisites 
-Create a data service named `patent-data-service`
+Create a data service named `patent-data-service` (to use a relational database)
 
 # Demo Steps
 This sample application is aimed at demostrating:
