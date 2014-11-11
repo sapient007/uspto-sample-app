@@ -7,7 +7,10 @@ In order to demo the concept of "micro-services", this sample app contains two s
 * datagov-crawler
 * patent-search-app
 
-Each project needs to be built independently using the `mvn package` command. Both services will expect to interact with each other using a "data" service. This is expected to be called `patent-data-service`. The `manifest.xml` file contains further details such as:
+Each project needs to be built independently using the `mvn package` command. Both services will expect to interact with each other using a "data" service. This is expected to be called `patent-data-service`. 
+
+The `manifest.xml` file contains further details such as:
+
 * YML inheritance info. 
 * Enforcement of a buildpack to use in CloudFoundry.
 * Sample of how to deploy multiple projects in CloudFoundry.
@@ -17,17 +20,18 @@ To learn more about `manifest` files, I recommend using a generator tool such as
 
 ### Build Instructions
 In order to demo the micro-services demo, follow these steps:
-1. Clone this repository
-2. Create a data service called "patent-data-service" (SQL store).
-3. Build micro-services
-..1. Go to the `datagov-crawler` project by running `cd datagov-crawler`
-..2. Build project by running `mvn clean package`
-..3. Go to the `patent-search-app` by running `cd ../patent-search-app`
-..4. Build project by running `mvn clean package`
-..5. Go back to parent folder by running `cd ..`
-3. Execute the `cf push` command
 
-In the event that a `host already assigned` error is detected, please update your manifest file (`manifest.yml`) with a different name.
+1. Clone this repository.
+2. Create a data service called "patent-data-service" (SQL store).
+3. Build micro-services.
+..1. Go to the `datagov-crawler` project by running `cd datagov-crawler`.
+..2. Build project by running `mvn clean package`.
+..3. Go to the `patent-search-app` by running `cd ../patent-search-app`.
+..4. Build project by running `mvn clean package`.
+..5. Go back to parent folder by running `cd ..`.
+3. Execute the `cf push` command.
+
+:warning: In the event that a `host already assigned` error is detected, please update your manifest file (`manifest.yml`) with a different name.
 
 ### Micro-Services Summary
 The `datagov-crawler` application polls the data.gov site for valid "patent" data. Once a file is detected, it will be processed in-memory and uploaded in the "patent-data-service" data store. Notice that this application has `no-route` set so that CloudFoundry can use it as a "process" application.
