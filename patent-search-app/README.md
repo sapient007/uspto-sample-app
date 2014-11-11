@@ -12,7 +12,8 @@ Run the command `mvn package`
 ## Demo Features
 ### Pushing Applications
 Run the command `cf push`.  
-Notice that the `manifest.yml` file will be used for this. Furthermore, it will deploy the sample application with an "in-memory" database with "dummy" data.
+
+:bulb: Notice that the `manifest.yml` file will be used for this. Furthermore, it will deploy the sample application with an "in-memory" database with "dummy" data.
 
 ### Scaling Applications
 Run the command `cf scale -i 5 -m 1GB -f`. This will scale the app to 5 instances each with 1GB of memory. 
@@ -27,7 +28,8 @@ Running `cf bind-service uspto-patent-search patent-data-service` followed by `c
 ### DevOps Use Case
 
 
-References: 
-1. https://github.com/cloudfoundry/cf-java-client/tree/master/cloudfoundry-maven-plugin 
-2. https://github.com/albertoaflores/jenkins-vagrant-server 
+References:  
+
+1. https://github.com/cloudfoundry/cf-java-client/tree/master/cloudfoundry-maven-plugin. 
+2. https://github.com/albertoaflores/jenkins-vagrant-server. 
 
